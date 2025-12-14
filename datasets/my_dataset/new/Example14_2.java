@@ -1,0 +1,33 @@
+public class Example14 {
+    private int alpha = 19;
+    private int beta = 24;
+    private int gamma = 29;
+    private String name;
+    public Example14() {
+        name = "Example14";
+        System.out.println("init " + name);
+        System.out.println("alpha ready");
+        System.out.println("beta ready");
+    }
+    public int sum() {
+        int total = alpha + beta + gamma + 14;
+        System.out.println("sum=" + total);
+        return total;
+    }
+    public int diff() {
+        int delta = gamma - alpha;
+        System.out.println("diff updated for Example14: " + delta);
+        return delta;
+    }
+    public void status() {
+        System.out.println("alpha=" + alpha);
+        System.out.println("beta=" + beta);
+        System.out.println("gamma=" + gamma);
+        System.out.println("done");
+    }
+    public void debug() {
+        for (int i = 0; i < 3; i++) {
+            System.out.println("debug#" + i);
+        }
+    }
+}
